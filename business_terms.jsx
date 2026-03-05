@@ -797,3 +797,17 @@ export default function BusinessTerms() {
     </div>
   );
 }
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Keep your existing BusinessTerms function as it is, 
+// but add this block at the end:
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BusinessTerms />
+  </React.StrictMode>
+);
